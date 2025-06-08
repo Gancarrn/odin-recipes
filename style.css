@@ -1,0 +1,79 @@
+:root {
+  --color-yellow: #FCEF91;
+  --color-orange-light: #FB9E3A;
+  --color-orange: #E6521F;
+  --color-red: #EA2F14;
+  --color-text: #333333;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif, serif, 'Times New Roman';
+    background-color: var(--color-yellow);
+    color: var(--color-text);
+}
+
+/*NAVBAR*/
+
+.navBar {
+    display: flex;
+    margin: 0 0 1em 0;
+    background-color: var(--color-orange-light);
+    flex-direction: row-reverse;
+}
+
+.logo {
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 28px;
+    margin: auto auto auto 0;
+}
+
+.navBar > ul {
+    margin: 1em;
+    font-size: 24px;
+    display: flex;
+    list-style: none;
+}
+
+.navBar > ul > li > a {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0 2em;
+}
+
+.navBar > ul > li > a:hover{
+    background-color: var(--color-orange);
+}
+
+/*CATALOG*/
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: space-evenly;
+}
+
+.catalog > a {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.catalog > a > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.catalog > a:hover {
+    text-decoration: underline;
+}

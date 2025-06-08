@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="recipes/lasagna.html">Lasagna Recipe</a></li>
-        <li><a href="recipes/macandcheese.html">Mac & Cheese Recipe</a></li>
-        <li><a href="recipes/sandwich.html">Grilled Cheese Sandwich Recipe</a></li>
-    </ul>
+    <div class="navBar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="logo">Odin Recipes</div>
+    </div>
+
+    <div class="recipes">
+        <div class="catalog">
+            <a href="recipes/lasagna.html">
+                <span>Lasagna Recipe</span><br>
+                <img src="./recipes/lasagna.jpg" alt="lasagna picture">
+            </a>
+            <a href="recipes/macandcheese.html">
+                <span>Mac & Cheese Recipe</span><br>
+                <img src="./recipes/macandcheese.jpg" alt="lasagna picture">
+            </a>
+            <a href="recipes/sandwich.html">
+                <span>Grilled Cheese Sandwich Recipe</span><br>
+                <img src="./recipes/sandwich.jpg" alt="lasagna picture">
+            </a>
+        </div>
+    </div>
 </body>
 </html>
